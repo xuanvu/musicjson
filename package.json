@@ -1,12 +1,15 @@
 {
   "name": "musicjson",
   "description": "MusicXML to MusicJSON bi-directional converter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/saebekassebil/musicjson",
   "author": {
     "name": "Jakob Miland",
     "email": "saebekassebil@gmail.com"
   },
+  "contributors": [
+    {"name": "Vincent Giersch", "email": "mail@vincent.sh" }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/saebekassebil/musicjson.git"
@@ -27,6 +30,13 @@
   "dependencies": {
     "domino": ">=1.0.2",
     "commander": ">=0.6.1"
+  },
+  "devDependencies" : {
+    "jshint"    : "latest",
+    "nodeunit"  : "latest"
+  },
+  "scripts": {
+    "test": "make all"
   },
   "preferGlobal": true,
   "bin": {

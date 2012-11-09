@@ -42,5 +42,5 @@ also free to submit any feature requests!
 
 ## License
 Copyright (c) 2012 Saebekassebil  
+Copyright (c) 2012 Vincent Giersch <mail@vincent.sh>
 Licensed under the MIT license.
-
