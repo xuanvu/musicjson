@@ -1,5 +1,7 @@
 # musicjson
 
+[![Build Status](https://secure.travis-ci.org/FlatIO/musicjson.png?branch=master)](https://next.travis-ci.org/FlatIO/musicjson)
+
 MusicXML to MusicJSON bi-directional converter
 Translates MusicXML to MusicJSON format and back again!
 
