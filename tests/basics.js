@@ -47,7 +47,7 @@ exports.basic = {
       test.done();
     });
   },
-  'test for bad short tag interpretation': function (test) {
+  'test for bad empty elements interpretation (ex: <chord />)': function (test) {
     var reve = fs.readFileSync(__misc + '/reve.xml', 'utf-8');
 
     test.expect(2);
