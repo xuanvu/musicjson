@@ -46,5 +46,21 @@ exports.basic = {
 
       test.done();
     });
+  },
+  'test for bad short tag interpretation': function (test) {
+    var reve = fs.readFileSync(__misc + '/reve.xml', 'utf-8');
+
+    test.expect(2);
+    music = musicjson.musicJSON(reve, function(err, output) {
+      if (err) {
+        console.error('An error occured:', err.message);
+        return false;
+      }
+
+      test.equal(Object.keys(output['score-partwise'].part[1].measure[0].note[1].chord).length, 0);
+      test.equal(output['score-partwise'].part[1].measure[0].note[1].pitch.octave, 4);
+
+      test.done();
+    });
   }
 };
