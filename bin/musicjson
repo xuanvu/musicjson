@@ -121,15 +121,8 @@ if (program.json) {
       process.exit(1);
     }
 
-    if (program.indent) {
-      indent = parseInt(program.indent);
-      converted = formatXML(output.innerHTML, (!isNaN(indent)) ? indent : 2);
-    } else {
-      converted = output.innerHTML;
-    }
-
     if (typeof program.xml === 'string') {
-      fs.writeFile(program.xml, converted, function(err) {
+      fs.writeFile(program.xml, output, function(err) {
         if (err) {
           console.error('Couldn\'t write to file');
           console.error(err.message);
@@ -139,7 +132,7 @@ if (program.json) {
         console.log('Wrote succesfully to file');
       });
     } else {
-      console.log(converted);
+      console.log(output);
     }
   });
 } else {

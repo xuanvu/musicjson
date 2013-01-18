@@ -28,7 +28,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "domino": ">=1.0.2",
+    "flat-xmldom": ">=0.1.14",
     "commander": ">=0.6.1"
   },
   "devDependencies" : {
